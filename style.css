@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Smooch&display=swap');
+
+body {
+    font-family: 'Smooch', cursive;
+    overflow: hidden;
+    background: conic-gradient(at top right, slategray, white);
+}
+
+.container {
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digital-clock {
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: black;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.digital-clock h1 {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width: 768px) {
+    #bar {
+        display: none;
+    }
+
+    .digital-clock {
+        text-align: center;
+        width: 100%;
+    }
+
+    .digital-clock h1 {
+        display: block;
+    }
+}
+
+@media(max-width: 480px) {
+    .digital-clock h1 {
+        font-size: 4rem;
+    }
+}
